@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.top{
+    margin: 10px 5px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.6);
+}
+
+.image-top{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-top img{
+    width: 100%;
+    display: block;
+}
+
+.image-top:hover .icon-image{
+    display: block;
+}
+
+.icon-image{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.icon-image img{
+    position: absolute;
+    width: 60px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Box-text a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 20px;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.Box-text a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.eth, .days{
+    display: flex;
+    align-items: center;
+}
+
+.eth p{
+    color:  hsl(178, 100%, 50%);
+    font-weight: 600px;
+    padding-left: 8px;
+}
+
+.days p{
+    padding-left: 8px;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+
+.dates{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.dates img{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+    margin-right: 20px;
+}
+
+.dates p a.name{
+    font-size: 18px;
+}
+
+.dates p a.name:hover{
+    color: hsl(178, 100%, 50%);
+}
