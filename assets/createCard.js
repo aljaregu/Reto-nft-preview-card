@@ -1,9 +1,7 @@
-export function createCard(){
-    const app = document.querySelector('#app')
-
+export function createCard(item){
+    
     const card=document.createElement('div')
     card.className="card"
-    app.appendChild(card)
 
     const top=document.createElement('div')
     top.className="top"
@@ -14,14 +12,14 @@ export function createCard(){
     imagen0.className="image-top"
 
     const image_top=document.createElement('img')
-    image_top.src="./images/image-equilibrium.jpg"
+    image_top.src=item.NFT_image
     image_top.alt=""
 
     const icono0=document.createElement('div')
     icono0.className="icon-image"
 
     const icon_image=document.createElement('img')
-    icon_image.src="./images/icon-view.svg"
+    icon_image.src=item.NFT_image_view
     icon_image.alt=""
 
     top.appendChild(imagen0)
@@ -35,9 +33,9 @@ export function createCard(){
 
     const Ttop=document.createElement('a')
     Ttop.href="Ttop"
-    Ttop.textContent="Equilibrium #3429"
+    Ttop.textContent=item.title
     const parrafo1=document.createElement('p')
-    parrafo1.textContent="Our Equilibrium collection promotes balance and calm."
+    parrafo1.textContent=item.description1
     const flex=document.createElement('div')
     flex.className="flex"
     Box_text.appendChild(Ttop)
@@ -52,18 +50,18 @@ export function createCard(){
     flex.appendChild(days)
 
     const imagen1=document.createElement('img')
-    imagen1.src="./images/icon-ethereum.svg"
+    imagen1.src=item.ethereum_icon
     imagen1.alt=""
     const parrafo2=document.createElement('p')
-    parrafo2.textContent="0.041 ETH"
+    parrafo2.textContent=item.cost
     eth.appendChild(imagen1)
     eth.appendChild(parrafo2)
 
     const imagen2=document.createElement('img')
-    imagen2.src="./images/icon-clock.svg"
+    imagen2.src=item.clock_icon
     imagen2.alt=""
     const parrafo3=document.createElement('p')
-    parrafo3.textContent="3 days left"
+    parrafo3.textContent=item.time
     days.appendChild(imagen2)
     days.appendChild(parrafo3)
     
@@ -74,16 +72,18 @@ export function createCard(){
     Box_text.appendChild(dates)
 
     const imagen3=document.createElement('img')
-    imagen3.src="./images/image-avatar.png"
+    imagen3.src=item.avatar_image
     imagen3.alt=""
     const parrafo4=document.createElement('p')
-    parrafo4.textContent="Creation of"
+    parrafo4.textContent=item.creation
     dates.appendChild(imagen3)
     dates.appendChild(parrafo4)
 
     const Tperson=document.createElement('a')
     Tperson.href="Tperson"
     Tperson.className="name"
-    Tperson.textContent="Jules Wyvern"
+    Tperson.textContent=item.autor
     parrafo4.appendChild(Tperson)
+
+    return card
 }
