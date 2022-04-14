@@ -15,7 +15,6 @@ body{
 }
 
 .button-container{
-    left: 50px;
     margin: 30px;
     height: 50px;
     display: flex;
