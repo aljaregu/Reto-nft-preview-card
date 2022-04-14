@@ -12,14 +12,14 @@ export function createCard(item){
     imagen0.className="image-top"
 
     const image_top=document.createElement('img')
-    image_top.src=item.NFT_image
+    image_top.src=item.Imagen1
     image_top.alt=""
 
     const icono0=document.createElement('div')
     icono0.className="icon-image"
 
     const icon_image=document.createElement('img')
-    icon_image.src=item.NFT_image_view
+    icon_image.src=item.Imagen2
     icon_image.alt=""
 
     top.appendChild(imagen0)
@@ -35,7 +35,7 @@ export function createCard(item){
     Ttop.href="Ttop"
     Ttop.textContent=item.title
     const parrafo1=document.createElement('p')
-    parrafo1.textContent=item.description1
+    parrafo1.textContent=item.Texto1
     const flex=document.createElement('div')
     flex.className="flex"
     Box_text.appendChild(Ttop)
@@ -50,18 +50,18 @@ export function createCard(item){
     flex.appendChild(days)
 
     const imagen1=document.createElement('img')
-    imagen1.src=item.ethereum_icon
+    imagen1.src=item.Imagen3
     imagen1.alt=""
     const parrafo2=document.createElement('p')
-    parrafo2.textContent=item.cost
+    parrafo2.textContent=item.costo
     eth.appendChild(imagen1)
     eth.appendChild(parrafo2)
 
     const imagen2=document.createElement('img')
-    imagen2.src=item.clock_icon
+    imagen2.src=item.Imagen4
     imagen2.alt=""
     const parrafo3=document.createElement('p')
-    parrafo3.textContent=item.time
+    parrafo3.textContent=item.tiempo
     days.appendChild(imagen2)
     days.appendChild(parrafo3)
     
@@ -72,10 +72,10 @@ export function createCard(item){
     Box_text.appendChild(dates)
 
     const imagen3=document.createElement('img')
-    imagen3.src=item.avatar_image
+    imagen3.src=item.Imagen5
     imagen3.alt=""
     const parrafo4=document.createElement('p')
-    parrafo4.textContent=item.creation
+    parrafo4.textContent=item.creacion
     dates.appendChild(imagen3)
     dates.appendChild(parrafo4)
 
